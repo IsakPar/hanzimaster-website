@@ -1,0 +1,27 @@
+{
+  "name": "PolymasterLabs",
+  "short_name": "Polymaster",
+  "description": "The cognitive engine that powers language acquisition. One system. Every language. True mastery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0D0D",
+  "theme_color": "#C83737",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
+
+
+
