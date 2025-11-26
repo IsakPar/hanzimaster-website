@@ -10,14 +10,14 @@ export function Problem() {
 
   return (
     <section id="thesis" ref={ref} className="relative">
-      {/* Split Background */}
-      <div className="absolute inset-0 flex">
-        <div className="w-1/2 bg-ink-light" />
-        <div className="w-1/2 bg-ink" />
+      {/* Split Background - Horizontal on mobile, Vertical on desktop */}
+      <div className="absolute inset-0 flex flex-col md:flex-row">
+        <div className="flex-1 bg-ink-light" />
+        <div className="flex-1 bg-ink" />
       </div>
 
-      {/* Center Divider */}
-      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white/5 hidden md:block" />
+      {/* Center Divider - Horizontal on mobile, Vertical on desktop */}
+      <div className="absolute left-0 right-0 md:left-1/2 md:right-auto top-1/2 md:top-0 h-px md:h-auto w-full md:w-px md:bottom-0 bg-white/5 hidden md:block" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 min-h-screen">
