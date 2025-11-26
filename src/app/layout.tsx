@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -20,7 +21,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://polymasterlabs.com";
+const siteUrl = "https://www.polymasterlabs.com";
 const siteName = "PolymasterLabs";
 const siteDescription =
   "We are building the cognitive engine that powers language acquisition. One system. Every language. True mastery. Starting with Chinese (HSK 3.0).";
@@ -259,6 +260,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${dmSans.variable} ${geistMono.variable}`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
