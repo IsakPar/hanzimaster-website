@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, DM_Sans, Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -25,6 +25,12 @@ const siteUrl = "https://www.polymasterlabs.com";
 const siteName = "PolymasterLabs";
 const siteDescription =
   "We are building the cognitive engine that powers language acquisition. One system. Every language. True mastery. Starting with Chinese (HSK 3.0).";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   // Basic metadata

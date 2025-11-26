@@ -38,11 +38,13 @@ export function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? "bg-ink/95 backdrop-blur-md border-b border-white/5" : ""
+          scrolled 
+            ? "bg-ink/95 backdrop-blur-md border-b border-white/5 pt-[env(safe-area-inset-top)]" 
+            : ""
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-20 md:h-20">
             {/* Logo */}
             <motion.button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
